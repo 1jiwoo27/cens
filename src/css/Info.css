@@ -1,0 +1,11 @@
+.info-title {
+    margin-top: 40px;
+    margin-left: 100px;  
+    width: 370px;
+    height: 43px;
+    color: rgb(30, 29, 76);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: left;
+}

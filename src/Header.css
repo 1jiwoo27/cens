@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.cens {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 266px;
+    height: 78px;
+    color: rgb(20, 24, 62);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.menu {
+    margin-top: 80px;
+    margin-right: 45px;
+}
+
+.menu-detail{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+    color: rgb(101, 101, 101);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 60px;
+}
