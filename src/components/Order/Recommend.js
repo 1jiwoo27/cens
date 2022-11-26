@@ -1,27 +1,19 @@
 import React, { useState }  from 'react'
 import '../../css/Recommend.css'
 import Pagination from '../Pagination';
-import { useLocation } from 'react-router-dom';
-
+import { useLocation } from "react-router-dom";
 
 export default function Recommend() {
-   // 1. useLocation 훅 취득
+
   const location = useLocation();
-   // 2. location.state 에서 파라미터 취득
   const name = location.state.name;
   const credit = location.state.credit;
-  const teach = location.state.teach;
+  const teach = location.state.teach
+
   console.log(name)
   console.log(credit)
   console.log(teach)
-  
-  const spawn = require('child_process').spawn;
 
-  const result_01 = spawn('python', ['function_print.py'], );
-
-  result_01.stdout.on('data', (result)=>{
-    console.log(result.toString());
-  });
 
   const recoList = {
     subjects: [
