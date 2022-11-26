@@ -1,8 +1,19 @@
 import React, { useState }  from 'react'
 import '../../css/Recommend.css'
 import Pagination from '../Pagination';
+import { useLocation } from "react-router-dom";
 
 export default function Recommend() {
+
+  const location = useLocation();
+  const name = location.state.name;
+  const credit = location.state.credit;
+  const teach = location.state.teach
+
+  console.log(name)
+  console.log(credit)
+  console.log(teach)
+
   const recoList = {
     subjects: [
       {
