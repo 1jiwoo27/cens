@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
 import '../../css/Info.css'
+import { useNavigate } from "react-router-dom"
 
 export default function Info() {
+
+
 
   const [name, setName] = useState("");
   const [credit, setCredit] = useState("");
@@ -13,6 +16,8 @@ export default function Info() {
     console.log(name)
     console.log(credit)
     console.log(teach)
+    alert('저장되었습니다.')
+    window.location = '/recommend';
   }
  
   // 1. child-process모듈의 spawn 취득
@@ -87,15 +92,15 @@ export default function Info() {
             {'>'} 프로그래밍 실력
           </div>
           <div className='info-pro-cir'>
-            <div className='info-pro-lmax'/>
-            <div className='info-pro-lmed'/>
-            <div className='info-pro-min'/>
-            <div className='info-pro-hmed'/>
-            <div className='info-pro-hmax'/>
+            <button className='info-pro-lmax' type='button'/>
+            <button className='info-pro-lmed' type='button'/>
+            <button className='info-pro-min' type='button'/>
+            <button className='info-pro-hmed' type='button'/>
+            <button className='info-pro-hmax' type='button'/>
           </div>
           <div className='info-pro-type'>
-            <p className='info-type'>최상</p>
             <p className='info-type'>최하</p>
+            <p className='info-type'>최상</p>
           </div>
         </div>
         <div className='info-eval'>
@@ -104,13 +109,13 @@ export default function Info() {
           </div>
           <div className='info-eval-save'>
             <div className='info-eval-cir'>
-              <div className='info-eval-lmax'/>
-              <div className='info-eval-lmed'/>
-              <div className='info-eval-min'/>
-              <div className='info-eval-hmed'/>
-              <div className='info-eval-hmax'/>
+              <button className='info-eval-lmax' type='button'/>
+              <button className='info-eval-lmed' type='button'/>
+              <button className='info-eval-min' type='button'/>
+              <button className='info-eval-hmed' type='button'/>
+              <button className='info-eval-hmax' type='button'/>
             </div>
-            <button className='info-save-bt'>
+            <button className='info-save-bt' type='submit'>
               저장
               </button>
           </div>
@@ -120,7 +125,7 @@ export default function Info() {
           </div>
         </div>
       </div>
-      <div className='info-bottom' type='submit'>
+      <div className='info-bottom'>
         사용자 정보를 입력해주세요.
       </div>
     </form>

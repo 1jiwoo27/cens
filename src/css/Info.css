@@ -162,6 +162,7 @@
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 .info-pro-lmed, .info-pro-hmed{
@@ -175,6 +176,7 @@
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 .info-pro-min{
@@ -188,6 +190,7 @@
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 .info-pro-type{
@@ -238,6 +241,7 @@
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 .info-eval-lmed, .info-eval-hmed{
@@ -251,6 +255,7 @@
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 .info-eval-min{
@@ -264,6 +269,7 @@
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 50px;
+    cursor: pointer;
 }
 
 .info-save-bt{
@@ -280,6 +286,7 @@
     text-align: center;
     margin-top: 20px;
     margin-right: 42px;
+    cursor: pointer;
 }
 
 .info-eval-type{
