@@ -36,7 +36,7 @@ export default function Services() {
         <button className='sv-card' onClick={navigateToInfo}>
           <img className="sv-com-icon" src={com_icon} />
           <div className='sv-type2'>
-            수강 순서 추천
+            수강 과목 추천
             </div>
           <div className='sv-content2'>
             Engrossed listening. Park gate sell they west hard for the.
