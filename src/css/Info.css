@@ -9,3 +9,14 @@
     line-height: 41px;
     text-align: left;
 }
+
+.info-box{
+    margin: auto;
+    margin-top: 80px;
+    width: 876px;
+    height: 553px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(179, 171, 188);
+    border-radius: 24px;
+    }

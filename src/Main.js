@@ -20,6 +20,9 @@ function Main() {
         <Link to="/services">
           <p>Services</p>
         </Link>
+        <Link to="/timetable">
+          <p>Timetable</p>
+        </Link>
       </div>
     </>
   );
