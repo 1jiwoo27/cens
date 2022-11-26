@@ -10,10 +10,10 @@ export default function Roadmaps() {
     navigate("/roadmaps/roadmap1");
   };
   const navigateToRoadmap2 = () => {
-    navigate("/roadmaps/roadmap2");
+    navigate("/profession.html");
   };
   const navigateToRoadmap3 = () => {
-    navigate("/roadmaps/roadmap3");
+    navigate("/teacher.html");
   };
 
   return (

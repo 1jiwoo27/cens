@@ -8,8 +8,7 @@ import AboutUs from './components/AboutUs'
 import Recommend from './components/Order/Recommend'
 import Roadmaps from './components/Roadmap/Roadmaps'
 import Roadmap1 from './components/Roadmap/Roadmap1'
-import Roadmap2 from './components/Roadmap/Roadmap2'
-import Roadmap3 from './components/Roadmap/Roadmap3'
+
 import Services from './components/Service/Services'
 import Timetable from './components/Timetable'
 import Test from './components/Order/Test'
@@ -30,8 +29,8 @@ function App() {
           <Route path="/recommend" element={<Recommend />}></Route>
           <Route path="/roadmaps" element={<Roadmaps />}></Route>
           <Route path="/roadmaps/roadmap1" element={<Roadmap1 />}></Route>
-          <Route path="/roadmaps/roadmap2" element={<Roadmap2 />}></Route>
-          <Route path="/roadmaps/roadmap3" element={<Roadmap3 />}></Route>
+          <Route path="/profession.html"></Route>
+          <Route path="/teacher.html"></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/timetable" element={<Timetable />}></Route>
           <Route path="/test" element={<Test />}></Route>
