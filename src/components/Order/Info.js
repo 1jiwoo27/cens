@@ -1,43 +1,20 @@
 import React, {useState} from 'react'
 import '../../css/Info.css'
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom"
 
 export default function Info() {
+
+  const navigate = useNavigate();
+  const navigateToRecommend = () => {
+    navigate("/recommend", { state: { name: name, credit: credit, teach: teach }});
+  };
 
   const [name, setName] = useState("");
   const [credit, setCredit] = useState("");
   const [teach, setTeach] = useState("");
-  
-  const handleSubmit = e => {
-    e.preventDefault()
-    console.log(name)
-    console.log(credit)
-    console.log(teach)
-    //alert('저장되었습니다.')
-    //window.location = '/recommend';
-  }
-  const navigate = useNavigate();
-
-  const move = () => {
-    // 두번재 인자의 state 속성에 원하는 파라미터를 넣어준다. (id, job을 넣어봤다)
-    console.log(name)
-    console.log(credit)
-    console.log(teach)
-    navigate('/Recommend', {
-      state: {
-        name: name,
-        credit: credit,
-        teach: teach
-      }
-    });
-  };
-
-
 
   return (
-    
-    <form onSubmit={handleSubmit}>
+    <div>
       <div className='info-title'>
         수강 과목 추천
       </div>
@@ -114,7 +91,7 @@ export default function Info() {
               <button className='info-eval-hmed' type='button'/>
               <button className='info-eval-hmax' type='button'/>
             </div>
-            <button className='info-save-bt' type='submit' onClick={move}>
+            <button className='info-save-bt' type='submit' onClick={navigateToRecommend}>
               저장
               </button>
           </div>
@@ -127,7 +104,7 @@ export default function Info() {
       <div className='info-bottom'>
         사용자 정보를 입력해주세요.
       </div>
-    </form>
+    </div>
   )
 }
 
