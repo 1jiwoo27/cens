@@ -6,14 +6,12 @@ export default function Info() {
 
   const navigate = useNavigate();
   const navigateToRecommend = () => {
-    navigate("/recommend", { state: { name: name, credit: credit, teach: teach, pro: pro, test: test}});
+    navigate("/recommend", { state: { name: name, credit: credit, teach: teach }});
   };
 
   const [name, setName] = useState("");
   const [credit, setCredit] = useState("");
   const [teach, setTeach] = useState("");
-  const [pro, setPro] = useState("");
-  const [test, setTest] = useState("");
 
   return (
     <div>
@@ -29,7 +27,7 @@ export default function Info() {
             <input
               className="info-name-input"
               type="text"
-              placeholder="Enter your name"
+              placeholder="이름"
               value={name}
               onChange={e => setName(e.target.value)}
             />
@@ -44,7 +42,7 @@ export default function Info() {
               <input
               className="info-credit-input"
               type="number"
-              placeholder="Credit"
+              placeholder="학점 수"
               value={credit}
               onChange={e => setCredit(e.target.value)}
               />
@@ -58,7 +56,7 @@ export default function Info() {
               <input
               className="info-teach-input"
               type="number"
-              placeholder="Subject"
+              placeholder="과목 수"
               value={teach}
               onChange={e => setTeach(e.target.value)}
               />
@@ -69,33 +67,39 @@ export default function Info() {
           <div className='info-pro-ment'>
             {'>'} 프로그래밍 실력
           </div>
-          <div className='info-pro-box'>
-              <input
-              className="info-pro-input"
-              type="number"
-              placeholder="0~5"
-              value={pro}
-              onChange={e => setPro(e.target.value)}
-              />
-            </div>
+          <div className='info-pro-cir'>
+            <button className='info-pro-lmax' type='button'/>
+            <button className='info-pro-lmed' type='button'/>
+            <button className='info-pro-min' type='button'/>
+            <button className='info-pro-hmed' type='button'/>
+            <button className='info-pro-hmax' type='button'/>
+          </div>
+          <div className='info-pro-type'>
+            <p className='info-type'>최하</p>
+            <p className='info-type'>최상</p>
+          </div>
         </div>
         <div className='info-eval'>
           <div className='info-eval-ment'>
-              {'>'} 시험에 대한 선호도는?
+              {'>'} 선호하는 평가 유형이 무엇인가요?
           </div>
-          <div className='info-eval-box'>
-              <input
-              className="info-eval-input"
-              type="number"
-              placeholder="0~5"
-              value={test}
-              onChange={e => setTest(e.target.value)}
-              />
+          <div className='info-eval-save'>
+            <div className='info-eval-cir'>
+              <button className='info-eval-lmax' type='button'/>
+              <button className='info-eval-lmed' type='button'/>
+              <button className='info-eval-min' type='button'/>
+              <button className='info-eval-hmed' type='button'/>
+              <button className='info-eval-hmax' type='button'/>
             </div>
-          </div>
-          <button className='info-save-bt' type='submit' onClick={navigateToRecommend}>
+            <button className='info-save-bt' type='submit' onClick={navigateToRecommend}>
               저장
-          </button>
+              </button>
+          </div>
+          <div className='info-eval-type'>
+            <p className='info-type'>과제</p>
+            <p className='info-type'>시험</p>
+          </div>
+        </div>
       </div>
       <div className='info-bottom'>
         사용자 정보를 입력해주세요.

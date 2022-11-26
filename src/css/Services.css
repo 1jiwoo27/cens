@@ -106,17 +106,16 @@
     text-align: center;
 }
 .sv-content1{
-    width: 370px;
+    width: 420px;
     height: 170px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 43px;
     color: rgb(94, 98, 130);
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0%;
     text-align: center;
     white-space: pre-wrap;
 }
@@ -129,10 +128,9 @@
     margin-right: auto;
     margin-top: 27px;
     color: rgb(94, 98, 130);
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0%;
     text-align: center;
     white-space: pre-wrap;
 }
