@@ -13,6 +13,9 @@ export default function Services() {
     navigate("/info");
   };
 
+  const text1 = "컴퓨터교육과 학생들 또는\n컴퓨터교육과를 복수전공하는 학생들에게\n선이수 과목을 고려한 전공 로드맵 제공합니다."
+  const text2 = "수강할 학점 수와 과목 수를 고려하여\n수강 과목과 시간표를 추천합니다. "
+
   return (
     <div className='sv-middle'>
       <div className='sv-left'>
@@ -30,8 +33,7 @@ export default function Services() {
             컴퓨터교육과 전공 로드맵
             </div>
           <div className='sv-content1'>
-            컴퓨터교육과 학생들 또는 컴퓨터교육과를 복수전공하는 학생들에게
-            선이수 과목을 고려한 전공 로드맵 제공합니다.
+            {text1}
           </div>
         </button>
         <button className='sv-card' onClick={navigateToInfo}>
@@ -40,8 +42,8 @@ export default function Services() {
             수강 과목 추천
             </div>
           <div className='sv-content2'>
-          수강할 학점 수와 과목 수를 고려하여 수강 과목과 시간표를 추천합니다. 
-            </div>
+            {text2}
+          </div>
         </button>
       </div>
     </div>
