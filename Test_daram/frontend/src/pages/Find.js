@@ -30,8 +30,8 @@ const Find = () => {
       {data && <li>{JSON.stringify(data, ['title'], 2)}</li>}
       {data && <li>{JSON.stringify(data, ['content'], 2)}</li>}
       {data && <li>id: {data.id}</li>}
-      {data && <li>title: {data.name}</li>}
-      {data && <li>content: {data.email}</li>}
+      {data && <li>title: {data.title}</li>}
+      {data && <li>content: {data.content}</li>}
     </div>
   );
 };
