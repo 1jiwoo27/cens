@@ -1,0 +1,135 @@
+.sv-middle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sv-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.sv-title {
+    width: 266px;
+    height: 78px;
+    margin-left: 105px;
+    margin-top: 340px;
+    color: rgb(20, 24, 62);
+    font-family: Inter;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.sv-ment{
+    margin-left: 90px;
+    margin-top: 21px;
+    width: 468px;
+    height: 113px;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.sv-cards{
+    margin-left: 100px;
+    margin-top: 90px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.sv-card {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 70px;
+    width: 540px;
+    height: 685px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+}
+
+.sv-map-icon{
+    position: absolute;
+    width: 365px;
+    height: 256px;
+    margin-left: 76px;
+    margin-top: 58px;
+}
+
+.sv-com-icon{
+    position: absolute;
+    width: 281px;
+    height: 285px;
+    margin-left: 133px;
+    margin-top: 37px;
+}
+
+.sv-type1{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 351px;
+    width: 300px;
+    height: 120px;
+    color: rgb(30, 29, 76);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.sv-type2{
+    margin-top: 163px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+    width: 320px;
+    height: 120px;
+    color: rgb(30, 29, 76);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.sv-content1{
+    width: 370px;
+    height: 170px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 43px;
+    color: rgb(94, 98, 130);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.sv-content2{
+    width: 370px;
+    height: 170px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27px;
+    color: rgb(94, 98, 130);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+}

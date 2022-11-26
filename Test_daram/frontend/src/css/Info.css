@@ -1,0 +1,163 @@
+.info-title {
+    margin-top: 40px;
+    margin-left: 100px;  
+    width: 370px;
+    height: 43px;
+    color: rgb(30, 29, 76);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: left;
+}
+
+.info-box{
+    margin: auto;
+    margin-top: 80px;
+    width: 876px;
+    height: 553px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(179, 171, 188);
+    border-radius: 24px;
+}
+
+.info-name{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 52px;
+    margin-top: 30px;
+}
+
+.info-name-ment{
+    width: 290px;
+    height: 31px;
+    color: rgb(20, 24, 62);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.info-name-box{
+    margin-top: 20px;
+    width: 250px;
+    height: 35px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(104, 88, 121);
+    border-radius: 15px;
+}
+
+.info-name-input{
+    border: none;
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+}
+
+.info-num{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.info-credit{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 52px;
+}
+
+.info-credit-ment{
+    width: 290px;
+    height: 31px;
+    color: rgb(20, 24, 62);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.info-credit-box{
+    margin-top: 20px;
+    width: 250px;
+    height: 35px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(104, 88, 121);
+    border-radius: 15px;
+}
+
+.info-credit-input{
+    border: none;
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+}
+
+.info-teach{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 250px;
+}
+
+.info-teach-ment{
+    width: 290px;
+    height: 31px;
+    color: rgb(20, 24, 62);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.info-teach-box{
+    margin-top: 20px;
+    width: 250px;
+    height: 35px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(104, 88, 121);
+    border-radius: 15px;
+}
+
+.info-teach-input{
+    border: none;
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+}
+
+.info-program{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 52px;
+    margin-top: 24px;
+}
+
+.info-program-ment{
+    width: 350px;
+    height: 31px;
+    color: rgb(20, 24, 62);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.info-eval{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 52px;
+    margin-top: 24px;
+}
+
+.info-eval-ment{
+    width: 450px;
+    height: 31px;
+    color: rgb(20, 24, 62);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+}
