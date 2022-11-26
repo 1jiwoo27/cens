@@ -1,9 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../css/Info.css'
 
 export default function Info() {
+
+  const [name, setName] = useState("");
+  const [credit, setCredit] = useState("");
+  const [teach, setTeach] = useState("");
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    console.log(name)
+    console.log(credit)
+    console.log(teach)
+  }
+ 
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <div className='info-title'>
         수강 과목 추천
       </div>
@@ -17,6 +29,8 @@ export default function Info() {
               className="info-name-input"
               type="text"
               placeholder="이름"
+              value={name}
+              onChange={e => setName(e.target.value)}
             />
             </div>
         </div>
@@ -28,8 +42,10 @@ export default function Info() {
             <div className='info-credit-box'>
               <input
               className="info-credit-input"
-              type="text"
+              type="number"
               placeholder="학점 수"
+              value={credit}
+              onChange={e => setCredit(e.target.value)}
               />
             </div>
           </div>
@@ -40,8 +56,10 @@ export default function Info() {
             <div className='info-teach-box'>
               <input
               className="info-teach-input"
-              type="text"
+              type="number"
               placeholder="과목 수"
+              value={teach}
+              onChange={e => setTeach(e.target.value)}
               />
             </div>
           </div>
@@ -84,9 +102,10 @@ export default function Info() {
           </div>
         </div>
       </div>
-      <div className='info-bottom'>
+      <div className='info-bottom' type='submit'>
         사용자 정보를 입력해주세요.
       </div>
-    </div>
+    </form>
   )
 }
+
