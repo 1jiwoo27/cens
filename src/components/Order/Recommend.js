@@ -1,48 +1,90 @@
-import React from 'react'
+import React, { useState }  from 'react'
 import '../../css/Recommend.css'
+import Pagination from '../Pagination';
 
 export default function Recommend() {
   const recoList = {
     subjects: [
       {
-        name: "과목1",
-        content: "내용1",
-        score: 3.3,
+        type: '교직',
+        name: "컴퓨터교과교육론",
+        credit: 2,
+        professor: "김미량",
+        score: 2.46,
       },
       {
-        name: "과목2",
-        content: "내용2",
-        score: 4.5,
+        type: '교직',
+        name: "알고리즘",
+        credit: 2,
+        professor: "한옥영",
+        score: 2.46,
       },
       {
-        name: "과목3",
-        content: "내용3",
-        score: 4.2,
-      }
+        type: '교직',
+        name: "컴퓨터교과교육론",
+        credit: 2,
+        professor: "김미량",
+        score: 2.46,
+      },
+      {
+        type: '교직',
+        name: "자료구조",
+        credit: 2,
+        professor: "한옥영",
+        score: 2.46,
+      },
+      {
+        type: '교직',
+        name: "컴퓨터교과교육론",
+        credit: 2,
+        professor: "김미량",
+        score: 2.46,
+      },
+      {
+        type: '교직',
+        name: "컴퓨터교과교육론",
+        credit: 2,
+        professor: "김미량",
+        score: 2.46,
+      },
     ]}
+
+    const [contents, setContents] = useState([]);
+    const limit = 3;
+    const [page, setPage] = useState(1);
+    const offset = (page - 1) * limit;
 
   return (
     <>
       <div className='reco-title'>
-        사전 수강 과목 추천
+        수강 순서 추천
       </div>
       <div className='reco-middle'>
-      {recoList.subjects.map((el, index) => {
+      {recoList.subjects.slice(offset, offset + limit).map((el, index) => {
       return (
         <>
-        {<div className="reco-card" key={index}>
-          <div className='reco-card-middle'>
-            <p className="reco-name">{el.name}</p>
-            <p className="reco-score">{el.score}</p>
+        {
+        <div className="reco-card" key={index}>
+          <p className="reco-type">{el.type}</p>
+          <p className="reco-name">{el.name}</p>
+          <div className="reco-content">
+          <p className="reco-credit">- {el.credit}학점</p>
+          <p className="reco-professor">- {el.professor} 교수님</p>
+          <p className="reco-score">- 에타 강의평: {el.score}</p>
           </div>
-          <p className="reco-content">{el.content}</p>
-          
         </div>
         }
         </>
       )
     })}
     </div>
+    <Pagination
+        total={recoList.subjects.length}
+        limit={limit}
+        page={page}
+        setPage={setPage}
+      />
+    
     </>
   );
 }

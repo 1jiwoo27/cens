@@ -14,7 +14,7 @@
     height: 400px;
     margin-left: 300px;
     margin-right: 300px;
-    margin-top: 100px;
+    margin-top: 170px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -24,53 +24,61 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 300px;
-    height: 400px;
+    width: 365px;
+    height: 273px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 36px;
+    border-radius: 18px;
 }
 
-.reco-card-middle {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 310px;
+.reco-type{
+    margin-left: 36px;
+    margin-top: 50px;
+    width: 75px;
+    height: 27px;
+    color: rgb(132, 130, 154);
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
 }
 
 .reco-name{
-    margin-left: 20px;
-    width: 138.62px;
-    height: 19.3px;
-    color: rgb(94, 98, 130);
-    font-family: Poppins;
-    font-size: 18px;
+    margin-left: 31px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 250px;
+    height: 52px;
+    color: rgb(8, 8, 8);
+    font-size: 30px;
     font-weight: 500;
     letter-spacing: 0%;
     text-align: left;
 }
 
 .reco-content{
-    width: 151px;
-    height: 17px;
-    margin-left: 50px;
-    margin-top: 0;
-    color: rgb(94, 98, 130);
-    font-family: Poppins;
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 36px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 300px;
+    color: rgb(132, 130, 154);
+    font-size: 22px;
     font-weight: 500;
-    letter-spacing: 0%;
     text-align: left;
 }
 
+.reco-credit{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.reco-professor{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .reco-score{
-    width: 42.86px;
-    height: 19.3px;
-    color: rgb(94, 98, 130);
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2450000047683716;
-    letter-spacing: 0%;
-    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
