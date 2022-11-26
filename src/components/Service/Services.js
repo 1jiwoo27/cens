@@ -30,7 +30,7 @@ export default function Services() {
             컴퓨터교육과 전공 로드맵
             </div>
           <div className='sv-content1'>
-            컴퓨터교육과 학생들 또는 컴퓨터교육과를 복수전공하는 학생들에게 
+            컴퓨터교육과 학생들 또는 컴퓨터교육과를 복수전공하는 학생들에게
             선이수 과목을 고려한 전공 로드맵 제공합니다.
           </div>
         </button>

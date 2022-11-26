@@ -118,6 +118,7 @@
     line-height: 26px;
     letter-spacing: 0%;
     text-align: center;
+    white-space: pre-wrap;
 }
 
 .sv-content2{
@@ -133,4 +134,5 @@
     line-height: 26px;
     letter-spacing: 0%;
     text-align: center;
+    white-space: pre-wrap;
 }

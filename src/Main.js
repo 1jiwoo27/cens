@@ -11,9 +11,6 @@ function Main() {
         <Link to="/info">
           <p>Info</p>
         </Link>
-        <Link to="/recommend">
-          <p>Recommend</p>
-        </Link>
         <Link to="/roadmaps">
           <p>Roadmaps</p>
         </Link>
