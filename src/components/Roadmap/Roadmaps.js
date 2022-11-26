@@ -4,7 +4,7 @@ import tri_icon from '../../images/tri.png'
 import { useNavigate } from "react-router-dom"
 
 export default function Roadmaps() {
-
+  
   const navigate = useNavigate();
   const navigateToRoadmap1 = () => {
     navigate("/roadmaps/roadmap1");

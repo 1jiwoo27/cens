@@ -12,6 +12,7 @@ import Roadmap2 from './components/Roadmap/Roadmap2'
 import Roadmap3 from './components/Roadmap/Roadmap3'
 import Services from './components/Service/Services'
 import Timetable from './components/Timetable'
+import Test from './components/Order/Test'
 
 //css
 import "./App.css";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/roadmaps/roadmap3" element={<Roadmap3 />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/timetable" element={<Timetable />}></Route>
+          <Route path="/test" element={<Test />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

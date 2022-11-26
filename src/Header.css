@@ -19,6 +19,7 @@
     letter-spacing: 0%;
     text-align: left;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .menu {
@@ -37,4 +38,5 @@
     letter-spacing: 0%;
     text-align: left;
     margin-left: 60px;
+    cursor: pointer;
 }
