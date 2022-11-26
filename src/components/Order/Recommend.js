@@ -15,6 +15,14 @@ export default function Recommend() {
   console.log(credit)
   console.log(teach)
   
+  const spawn = require('child_process').spawn;
+
+  const result_01 = spawn('python', ['function_print.py'], );
+
+  result_01.stdout.on('data', (result)=>{
+    console.log(result.toString());
+  });
+
   const recoList = {
     subjects: [
       {
