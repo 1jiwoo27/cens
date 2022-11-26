@@ -215,6 +215,12 @@
     text-align: left;
 }
 
+.info-eval-save{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .info-eval-cir{
     display: flex;
     flex-direction: row;
@@ -258,6 +264,22 @@
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 50px;
+}
+
+.info-save-bt{
+    width: 117px;
+    height: 48px;
+    top: 788px;
+    left: 1236px;
+    background: rgb(178, 178, 178);
+    border: none;
+    border-radius: 15px;
+    color: rgb(20, 24, 62);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 42px;
 }
 
 .info-eval-type{

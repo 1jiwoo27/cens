@@ -66,12 +66,17 @@ export default function Info() {
           <div className='info-eval-ment'>
               {'>'} 선호하는 평가 유형이 무엇인가요?
           </div>
-          <div className='info-eval-cir'>
-            <div className='info-eval-lmax'/>
-            <div className='info-eval-lmed'/>
-            <div className='info-eval-min'/>
-            <div className='info-eval-hmed'/>
-            <div className='info-eval-hmax'/>
+          <div className='info-eval-save'>
+            <div className='info-eval-cir'>
+              <div className='info-eval-lmax'/>
+              <div className='info-eval-lmed'/>
+              <div className='info-eval-min'/>
+              <div className='info-eval-hmed'/>
+              <div className='info-eval-hmax'/>
+            </div>
+            <button className='info-save-bt'>
+              저장
+              </button>
           </div>
           <div className='info-eval-type'>
             <p className='info-type'>과제</p>
