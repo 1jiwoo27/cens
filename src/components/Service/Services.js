@@ -20,7 +20,7 @@ export default function Services() {
           Services
         </div>
         <div className='sv-ment'>
-          > 원하는 서비스를 선택해주세요
+          {'>'} 원하는 서비스를 선택해주세요
         </div>
       </div>
       <div className='sv-cards'>
