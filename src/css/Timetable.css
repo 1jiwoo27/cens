@@ -1,376 +1,769 @@
 .tm-screen{
-    /* 수강 시간표 출력 */
-        position: relative;
-        width: 1920px;
-        height: 1080px;
-        background: rgb(255, 255, 255);
-    }
-    
-    .tm-title{
-    /* Best Flights */
-    position: absolute;
-    width: 387px;
-    height: 87px;
-    top: 524px;
-    left: 72px;
-    color: rgb(30, 29, 76);
-    font-family: Inter;
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 87px;
-    letter-spacing: 0%;
-    text-align: left;
-    }
-    
-    .tm-ment{
-    /* We Offer Best Services */
-    position: absolute;
-    width: 476px;
-    height: 39px;
-    top: 626px;
-    left: 41px;
-    color: rgb(0, 0, 0);
-    font-family: Inter;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0%;
-    text-align: center;
-    text-transform: capitalize;
-    }
-    
-    .tm-largeframe{
-    /* 4 Modules/Calendars/Large/Week View */
-    position: absolute;
-    width: 1243px;
-    height: 929px;
-    top: 103px;
-    left: 600px;
-    border-radius: 20px;
-    }
-    
-    .tm-2022{
-        position: absolute;
-        width: 111.87px;
-        height: 33px;
-        top: 32px;
-        left: 18.65px;
-        color: rgb(27, 27, 37);
-        font-family: Inter;
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 0px;
-        text-align: left;
-        }
-    
-    .tm-background{
-        /* Background Color */
-        position: absolute;
-        width: 1243px;
-        height: 824.49px;
-        top: 108px;
-        left: 0;
-        border-radius: 30px;
-    }
-    
-    .tm-bgcolor{
-        /* fundamentals/colors/primary/sensitive-grey */
-        position: absolute;
-        width: 1243px;
-        height: 824.49px;
-        top: 0;
-        left: 0;
-        background: rgb(248, 248, 252);
-    }
-    
-    .tm-labels{
-        /* Labels */
-        position: absolute;
-        width: 1150.4px;
-        height: 758.39px;
-        top: 131.57px;
-        left: 36.05px;
-    }
-    
-    .tm-monday{
-    /* Monday */
-    position: absolute;
-    width: 57.18px;
-    height: 24.39px;
-    top: 131.57px;
-    left: 146.67px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: center;
-    }
-    .tm-tuesday{
-    /* Tuesday */
-    position: absolute;
-    width: 58.42px;
-    height: 24.39px;
-    top: 131.57px;
-    left: 310.13px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: center;
-    }
-    .tm-wednesday{
-    position: absolute;
-    width: 80.79px;
-    height: 24.39px;
-    top: 131.57px;
-    left: 463.02px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: center;
-    }
-    .tm-thursday{
-    position: absolute;
-    width: 64.64px;
-    height: 24.39px;
-    top: 131.57px;
-    left: 635.17px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: center;
-    }
-    .tm-friday{
-    position: absolute;
-    width: 43.51px;
-    height: 24.39px;
-    top: 131.57px;
-    left: 816.03px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: center;
-    }
-    .tm-saturday{
-    position: absolute;
-    width: 62.15px;
-    height: 24.39px;
-    top: 131.57px;
-    left: 964.57px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: center;
-    }
-    .tm-sunday{
-        /* Sunday */
-        position: absolute;
-        width: 52.21px;
-        height: 24.39px;
-        top: 131.57px;
-        left: 1134.24px;
-        color: rgb(125, 125, 137);
-        font-family: Open Sans;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0px;
-        text-align: center;
-    }
-    .tm-9{
-    /* 09:00 */
-    position: absolute;
-    width: 38.53px;
-    height: 24.39px;
-    top: 166.41px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-10{
-    /* 09:30 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 230.28px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-11{
-    /* 10:00 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 294.15px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-12{
-    /* 10:30 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 358.01px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-13{
-    /* 11:00 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 421.88px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-14{
-    /* 11:30 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 485.75px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-15{
-    /* 12:00 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 549.62px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-16{
-    /* 12:30 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 613.49px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-17{
-    /* 13:00 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 677.36px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-18{
-    /* 13:30 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 741.23px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-19{
-    /* 14:00 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 805.1px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
-    .tm-20{
-    /* 14:30 */
-    position: absolute;
-    width: 31px;
-    height: 21px;
-    top: 868.96px;
-    left: 36.05px;
-    color: rgb(125, 125, 137);
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    }
+/* 수강 시간표 출력 */
+position: relative;
+width: 1920px;
+height: 970px;
+
+
+background: rgb(255, 255, 255);
+}
+
+.tm-title{
+/* Best Flights */
+position: absolute;
+width: 387px;
+height: 87px;
+top: 439px;
+left: 94px;
+
+color: rgb(30, 29, 76);
+font-family: Inter;
+font-size: 72px;
+font-weight: 700;
+line-height: 87px;
+letter-spacing: 0%;
+text-align: left;
+
+
+}
+
+.tm-ment{
+/* We Offer Best Services */
+position: absolute;
+width: 476px;
+height: 39px;
+top: 541px;
+left: 63px;
+
+
+color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 25px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+
+
+}
+
+.tm-largeframe{
+/* 4 Modules/Calendars/Large/Week View */
+position: absolute;
+width: 1243px;
+height: 834.38px;
+top: 92.51px;
+left: 600px;
+
+
+border-radius: 20px;
+}
+
+.tm-background{
+/* Background Color */
+position: absolute;
+width: 1243px;
+height: 760.51px;
+top: 97px;
+left: 0;
+
+
+border-radius: 30px;
+}
+
+.tm-bgcolor{
+/* fundamentals/colors/primary/sensitive-grey */
+position: absolute;
+width: 1243px;
+height: 760.51px;
+top: 0;
+left: 0;
+
+
+background: rgb(248, 248, 252);
+}
+
+.tm-labels{
+/* Labels */
+position: absolute;
+width: 1150.4px;
+height: 681.15px;
+top: 3px;
+}
+
+.tm-monday{
+/* Monday */
+position: absolute;
+width: 57.18px;
+height: 21.9px;
+top: 118.17px;
+left: 146.67px;
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+
+
+}
+.tm-tuesday{
+/* Tuesday */
+position: absolute;
+width: 58.42px;
+height: 21.9px;
+top: 118.17px;
+left: 310.13px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+
+
+}
+.tm-wednesday{
+/* Wednesday */
+position: absolute;
+width: 80.79px;
+height: 21.9px;
+top: 118.17px;
+left: 463.02px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+
+
+}
+.tm-thursday{
+/* Thursday */
+position: absolute;
+width: 64.64px;
+height: 21.9px;
+top: 118.17px;
+left: 635.17px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+
+
+
+
+}
+.tm-friday{
+/* Friday */
+position: absolute;
+width: 43.51px;
+height: 21.9px;
+top: 118.17px;
+left: 816.03px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+
+
+
+}
+.tm-saturday{
+/* Saturday */
+position: absolute;
+width: 62.15px;
+height: 21.9px;
+top: 118.17px;
+left: 964.57px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+
+
+
+
+}
+.tm-sunday{
+/* Sunday */
+position: absolute;
+width: 52.21px;
+height: 21.9px;
+top: 118.17px;
+left: 1134.24px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+
+}
+.tm-9{
+/* 09:00 */
+position: absolute;
+width: 38.53px;
+height: 21.9px;
+top: 149.46px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+.tm-10{
+/* 09:30 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 206.82px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+
+
+}
+.tm-11{
+/* 10:00 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 264.19px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+
+}
+.tm-12{
+/* 10:30 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 321.55px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+.tm-13{
+/* 11:00 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 378.91px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+.tm-14{
+/* 11:30 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 436.28px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+.tm-15{
+/* 12:00 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 493.64px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+.tm-16{
+/* 12:30 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 551px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+.tm-17{
+/* 13:00 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 608.37px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+
+
+}
+.tm-18{
+/* 13:30 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 665.73px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+
+
+}
+.tm-19{
+/* 14:00 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 723.1px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+.tm-20{
+/* 14:30 */
+position: absolute;
+width: 31px;
+height: 18.86px;
+top: 780.46px;
+left: 36.05px;
+
+
+color: rgb(125, 125, 137);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+
+.lecture1Card{
+/* Atoms/Cards/Flat */
+position: absolute;
+width: 158px;
+height: 155px;
+top:390px;
+left:95px;
+background: rgb(255, 255, 255);
+}
+
+
+.lecture1Highlight{
+/* fundamentals/colors/primary/vibrant-cyan */
+position: absolute;
+width: 5px;
+height: 155px;
+top: 0;
+left: -1px;
+background: rgb(255, 200, 50);
+}
+
+.lecture1Name{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 18.6px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture1Location{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 78px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture2Card{
+/* Atoms/Cards/Flat */
+position: absolute;
+width: 160px;
+height: 155px;
+top:680px;
+left:255px;
+background: rgb(255, 255, 255);
+}
+
+
+.lecture2Highlight{
+/* fundamentals/colors/primary/vibrant-cyan */
+position: absolute;
+width: 5px;
+height: 155px;
+top: 0;
+left: -1px;
+background: rgb(45, 190, 205);
+}
+
+.lecture2Name{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 18.6px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture2Location{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 78px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture3Card{
+/* Atoms/Cards/Flat */
+position: absolute;
+width: 158px;
+height: 155px;
+top:202px;
+left:780px;
+background: rgb(255, 255, 255);
+}
+
+
+.lecture3Highlight{
+/* fundamentals/colors/primary/vibrant-cyan */
+position: absolute;
+width: 5px;
+height: 155px;
+top: 0;
+left: -1px;
+background: rgb(45, 190, 205);
+}
+
+.lecture3Name{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 18.6px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture3Location{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 78px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture4Card{
+/* Atoms/Cards/Flat */
+position: absolute;
+width: 158px;
+height: 155px;
+top:202px;
+left:590px;
+background: rgb(255, 255, 255);
+}
+
+
+.lecture4Highlight{
+/* fundamentals/colors/primary/vibrant-cyan */
+position: absolute;
+width: 5px;
+height: 155px;
+top: 0;
+left: -1px;
+background: rgb(45, 190, 205);
+}
+
+.lecture4Name{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 18.6px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture4Location{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 78px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture5Card{
+/* Atoms/Cards/Flat */
+position: absolute;
+width: 158px;
+height: 155px;
+top:680px;
+left:590px;
+background: rgb(255, 255, 255);
+}
+
+
+.lecture5Highlight{
+/* fundamentals/colors/primary/vibrant-cyan */
+position: absolute;
+width: 5px;
+height: 155px;
+top: 0;
+left: -1px;
+background: rgb(255, 200, 50);
+}
+
+.lecture5Name{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 18.6px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture5Location{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 78px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture6Card{
+/* Atoms/Cards/Flat */
+position: absolute;
+width: 158px;
+height: 155px;
+top:540px;
+left:780px;
+background: rgb(255, 255, 255);
+}
+
+
+.lecture6Highlight{
+/* fundamentals/colors/primary/vibrant-cyan */
+position: absolute;
+width: 5px;
+height: 155px;
+top: 0;
+left: -1px;
+background: rgb(255, 200, 50);
+}
+
+.lecture6Name{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 18.6px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture6Location{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 78px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
