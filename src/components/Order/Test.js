@@ -1,13 +1,11 @@
-import { useLocation } from "react-router-dom";
+const spawn = require('child_process').spawn;
 
-export default function Test() {
+const result= spawn('python', ['print.py'] );
 
-  const location = useLocation();
-  const name = location.state.name;
-  const credit = location.state.credit;
-  const teach = location.state.teach
+result.stdout.on('data', function(data) {
+    console.log(data.toString());
+});
 
-  console.log(name)
-  console.log(credit)
-  console.log(teach)
-}
+result.stderr.on('data', function(data) {
+    console.log(data.toString());
+});

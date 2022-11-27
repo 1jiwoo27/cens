@@ -6,7 +6,7 @@ export default function Info() {
 
   const navigate = useNavigate();
   const navigateToRecommend = () => {
-    navigate("/recommend", { state: { name: name, credit: credit, teach: teach, pro: pro, test: test}});
+    navigate("/test", { state: { name: name, credit: credit, teach: teach, pro: pro, test: test}});
   };
 
   const [name, setName] = useState("");
