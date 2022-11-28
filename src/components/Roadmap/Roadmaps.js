@@ -7,13 +7,15 @@ export default function Roadmaps() {
   
   const navigate = useNavigate();
   const navigateToRoadmap1 = () => {
-    navigate("/common.html");
+    navigate("/roadmaps/roadmap1");
   };
   const navigateToRoadmap2 = () => {
-    navigate("/profession.html");
+    navigate(`/profession.html`);
+    window.location.reload();
   };
   const navigateToRoadmap3 = () => {
-    navigate("/teacher.html");
+    navigate(`/teacher.html`);
+    window.location.reload();
   };
 
   return (
@@ -33,7 +35,6 @@ export default function Roadmaps() {
           </p>
         </div>
       </div>
-    </div>
-    
+    </div>  
   )
 }
