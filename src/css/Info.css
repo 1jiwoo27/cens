@@ -1,3 +1,12 @@
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
 .info-title {
     margin-top: 40px;
     margin-left: 100px;  
@@ -19,7 +28,9 @@
     background: rgb(255, 255, 255);
     border: 1px solid rgb(179, 171, 188);
     border-radius: 24px;
+    animation: fadein 1s;
 }
+
 
 .info-name{
     display: flex;
@@ -222,4 +233,5 @@
     text-align: left;
     margin: auto;
     margin-top: 27px;
+    animation: fadein 3s;
 }

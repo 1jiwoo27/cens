@@ -41,7 +41,18 @@
     top: 30px;
     left: 600px;
     border-radius: 20px;
+    animation: fadein 1s;
 }
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
 
 .tm-background{
     position: absolute;
@@ -49,8 +60,11 @@
     height: 760.51px;
     top: 0;
     left: 0;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px 8px rgba(243, 243, 243);
     border-radius: 30px;
 }
+
 
 .tm-bgcolor{
     position: absolute;
@@ -63,8 +77,6 @@
 
 .tm-labels{
     position: absolute;
-    width: 1150.4px;
-    height: 681.15px;
     top: 3px;
 }
 
@@ -76,7 +88,7 @@
     left: 146.67px;
     color: rgb(125, 125, 137);
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0px;
@@ -84,109 +96,97 @@
 }
 
 .tm-tuesday{
-/* Tuesday */
-position: absolute;
-width: 58.42px;
-height: 21.9px;
-top: 118.17px;
-left: 310.13px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0px;
-text-align: center;
-
-
+    /* Tuesday */
+    position: absolute;
+    width: 58.42px;
+    height: 21.9px;
+    top: 118.17px;
+    left: 310.13px;
+    color: rgb(125, 125, 137);
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
 }
 .tm-wednesday{
-/* Wednesday */
-position: absolute;
-width: 80.79px;
-height: 21.9px;
-top: 118.17px;
-left: 463.02px;
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: center;
+    /* Wednesday */
+    position: absolute;
+    width: 80.79px;
+    height: 21.9px;
+    top: 118.17px;
+    left: 463.02px;
+    color: rgb(125, 125, 137);
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
 }
 .tm-thursday{
-/* Thursday */
-position: absolute;
-width: 64.64px;
-height: 21.9px;
-top: 118.17px;
-left: 635.17px;
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: center;
+    /* Thursday */
+    position: absolute;
+    width: 64.64px;
+    height: 21.9px;
+    top: 118.17px;
+    left: 635.17px;
+    color: rgb(125, 125, 137);
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
 }
 
 .tm-friday{
-/* Friday */
-position: absolute;
-width: 43.51px;
-height: 21.9px;
-top: 118.17px;
-left: 816.03px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: center;
-
-
-
+    /* Friday */
+    position: absolute;
+    width: 43.51px;
+    height: 21.9px;
+    top: 118.17px;
+    left: 816.03px;
+    color: rgb(125, 125, 137);
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
 }
+
 .tm-saturday{
-/* Saturday */
-position: absolute;
-width: 62.15px;
-height: 21.9px;
-top: 118.17px;
-left: 964.57px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: center;
+    /* Saturday */
+    position: absolute;
+    width: 62.15px;
+    height: 21.9px;
+    top: 118.17px;
+    left: 964.57px;
+    color: rgb(125, 125, 137);
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
 
 }
 .tm-sunday{
-/* Sunday */
-position: absolute;
-width: 52.21px;
-height: 21.9px;
-top: 118.17px;
-left: 1134.24px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: center;
+    /* Sunday */
+    position: absolute;
+    width: 52.21px;
+    height: 21.9px;
+    top: 118.17px;
+    left: 1134.24px;
+    color: rgb(125, 125, 137);
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
 
 }
 
