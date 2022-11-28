@@ -33,6 +33,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    50%{
+    opacity:0.5;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 .ab-card{
@@ -52,7 +66,7 @@
     width: 84px;
     height: 33.81px;
     position: relative;
-    top: 450px;
+    top: 454px;
     left: 50px;
     color: rgb(20, 24, 62);
     font-family: Poppins;
@@ -68,7 +82,7 @@
     width: 322px;
     height: 31px;
     position: relative;
-    top: 470px;
+    top: 474px;
     left: 52px;
 
     color: rgb(20, 24, 62);
