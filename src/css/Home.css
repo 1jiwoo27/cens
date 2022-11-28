@@ -21,3 +21,14 @@
     opacity:1;
     }
 }
+
+.copy-right{
+    color: rgb(109, 109, 109);
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: left;
+    margin-top: 280px;
+    margin-left: 1400px;
+}
