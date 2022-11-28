@@ -15,7 +15,7 @@ export default function Recommend() {
   console.log(name)
   console.log(credit)
   console.log(teach)
-  
+
 
   const recoList = {
     subjects: [
@@ -106,9 +106,7 @@ export default function Recommend() {
         setPage={setPage}
       />
     
-
     </>
-    
   );
 }
   
