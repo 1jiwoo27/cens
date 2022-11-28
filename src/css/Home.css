@@ -10,4 +10,14 @@
     line-height: 109px;
     letter-spacing: 0%;
     text-align: left;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }

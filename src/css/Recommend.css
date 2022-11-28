@@ -34,7 +34,6 @@
 .reco-type{
     margin-left: 36px;
     margin-top: 50px;
-    width: 75px;
     height: 27px;
     color: rgb(132, 130, 154);
     font-size: 22px;
@@ -46,7 +45,6 @@
     margin-left: 31px;
     margin-top: 0;
     margin-bottom: 0;
-    width: 250px;
     height: 52px;
     color: rgb(8, 8, 8);
     font-size: 30px;
@@ -61,7 +59,6 @@
     margin-left: 36px;
     margin-top: 0px;
     margin-bottom: 20px;
-    width: 300px;
     color: rgb(132, 130, 154);
     font-size: 22px;
     font-weight: 500;

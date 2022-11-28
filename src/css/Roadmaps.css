@@ -8,10 +8,21 @@
     font-weight: 600;
     line-height: 41px;
     text-align: left;
+    animation: fadein 1s;
 }
 
 .rm-middle {
     margin: auto;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 .rm-circle1 {
