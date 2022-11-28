@@ -34,15 +34,12 @@
     align-items: center;
     justify-content: center;
 
-    animation: fadein 0.5s;
+    animation: fadein 1s;
 }
 
 @keyframes fadein {
     0% {
     opacity:0;
-    }
-    50%{
-    opacity:0.5;
     }
     100% {
     opacity:1;
@@ -51,10 +48,10 @@
 
 .ab-card{
     /* 직사각형 1 */
-    width: 438.45px;
-    height: 626px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 350px;
+    height: 486px;
+    margin-left: 25px;
+    margin-right: 25px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -66,11 +63,11 @@
     width: 84px;
     height: 33.81px;
     position: relative;
-    top: 454px;
-    left: 50px;
+    top: 354px;
+    left: 42px;
     color: rgb(20, 24, 62);
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
     line-height: 1.2450000047683716;
     letter-spacing: 0%;
@@ -82,12 +79,12 @@
     width: 322px;
     height: 31px;
     position: relative;
-    top: 474px;
-    left: 52px;
+    top: 355px;
+    left: 40px;
 
     color: rgb(20, 24, 62);
     font-family: Poppins;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.2450000047683716;
     letter-spacing: 0%;
