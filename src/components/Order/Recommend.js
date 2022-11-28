@@ -8,7 +8,9 @@ export default function Recommend() {
   const location = useLocation();
   const name = location.state.name;
   const credit = location.state.credit;
-  const teach = location.state.teach
+  const teach = location.state.teach;
+  const pro = location.state.pro;
+  const test = location.state.test;
 
   console.log(name)
   console.log(credit)
@@ -18,46 +20,53 @@ export default function Recommend() {
   const recoList = {
     subjects: [
       {
-        type: '교직',
-        name: "컴퓨터교과교육론",
-        credit: 2,
-        professor: "김미량",
-        score: 2.46,
+        type: '전공일반',
+        name: "빅데이터시각화",
+        credit: 3,
+        professor: "오경선",
+        score: 4.83,
+      },
+      {
+        type: '전공일반',
+        name: "피지컬컴퓨팅",
+        credit: 3,
+        professor: "박천수",
+        score: 4.88,
+      },
+      {
+        type: '전공핵심',
+        name: "기본프로그래밍",
+        credit: 3,
+        professor: "안용학",
+        score: 3.63,
+      },
+      {
+        type: '전공핵심',
+        name: "운영체제",
+        credit: 3,
+        professor: "류은석",
+        score: 3.8,
       },
       {
         type: '교직',
-        name: "알고리즘",
+        name: "교육학개론",
         credit: 2,
-        professor: "한옥영",
-        score: 2.46,
+        professor: "한신일",
+        score: 4.44,
       },
       {
         type: '교직',
-        name: "컴퓨터교과교육론",
+        name: "교육방법및교육공학",
         credit: 2,
-        professor: "김미량",
-        score: 2.46,
+        professor: "김동호",
+        score: 4.57,
       },
       {
         type: '교직',
-        name: "자료구조",
+        name: "특수교육학개론",
         credit: 2,
-        professor: "한옥영",
-        score: 2.46,
-      },
-      {
-        type: '교직',
-        name: "컴퓨터교과교육론",
-        credit: 2,
-        professor: "김미량",
-        score: 2.46,
-      },
-      {
-        type: '교직',
-        name: "컴퓨터교과교육론",
-        credit: 2,
-        professor: "김미량",
-        score: 2.46,
+        professor: "권승희",
+        score: 4.57,
       },
     ]}
 
