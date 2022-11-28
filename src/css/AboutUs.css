@@ -16,9 +16,9 @@
     /* About us */
     width: 177px;
     height: 54px;
-    margin-top: 20px;
+    margin-top: 32px;
     margin-bottom: 60px;
-    margin-left: 105px;
+    margin-left: 110px;
     color: rgb(30, 29, 76);
     font-family: Open Sans;
     font-size: 40px;
@@ -33,41 +33,43 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    animation: fadein 1s;
 }
 
-@keyframes fadein {
+@keyframes fadeInUp {
     0% {
-    opacity:0;
+        opacity: 0;
+        transform: translateY(40px)
     }
-    100% {
-    opacity:1;
+    to {
+        opacity: 1;
+        transform: none;
     }
 }
 
 .ab-card{
     /* 직사각형 1 */
+    position: relative;
     width: 350px;
     height: 486px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 27px;
+    margin-right: 27px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     box-shadow: 0px 0px 7px 7px rgba(243, 243, 243);
     border-radius: 30px;
+    animation: fadeInUp 2s;
 }
 
 .ab-name{
     width: 84px;
     height: 33.81px;
     position: relative;
-    top: 354px;
-    left: 42px;
+    top: 14px;
+    left: 32px;
     color: rgb(20, 24, 62);
     font-family: Poppins;
-    font-size: 26px;
+    font-size: 21px;
     font-weight: 600;
     line-height: 1.2450000047683716;
     letter-spacing: 0%;
@@ -77,16 +79,25 @@
 .ab-role{
     /* : Main Back-End Engineer */
     width: 322px;
-    height: 31px;
+    height: 30px;
     position: relative;
-    top: 355px;
-    left: 40px;
+    top: 8px;
+    left: 44px;
 
     color: rgb(20, 24, 62);
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.2450000047683716;
     letter-spacing: 0%;
     text-align: left;
+}
+
+.ab-pic{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px 30px 0px 0px;
 }
