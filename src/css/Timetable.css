@@ -3,8 +3,6 @@
 position: relative;
 width: 1920px;
 height: 970px;
-
-
 background: rgb(255, 255, 255);
 }
 
@@ -13,18 +11,15 @@ background: rgb(255, 255, 255);
 position: absolute;
 width: 387px;
 height: 87px;
-top: 439px;
-left: 94px;
-
+top: 340px;
+left: 120px;
 color: rgb(30, 29, 76);
 font-family: Inter;
-font-size: 72px;
+font-size: 48px;
 font-weight: 700;
 line-height: 87px;
 letter-spacing: 0%;
 text-align: left;
-
-
 }
 
 .tm-ment{
@@ -32,20 +27,16 @@ text-align: left;
 position: absolute;
 width: 476px;
 height: 39px;
-top: 541px;
-left: 63px;
-
-
+top: 425px;
+left: 50px;
 color: rgb(0, 0, 0);
 font-family: Inter;
-font-size: 25px;
+font-size: 20px;
 font-weight: 500;
 line-height: 30px;
 letter-spacing: 0%;
 text-align: center;
 text-transform: capitalize;
-
-
 }
 
 .tm-largeframe{
@@ -53,35 +44,29 @@ text-transform: capitalize;
 position: absolute;
 width: 1243px;
 height: 834.38px;
-top: 92.51px;
+top: 30px;
 left: 600px;
-
-
 border-radius: 20px;
 }
 
 .tm-background{
-/* Background Color */
-position: absolute;
-width: 1243px;
-height: 760.51px;
-top: 97px;
-left: 0;
-
-
-border-radius: 30px;
+    /* Background Color */
+    position: absolute;
+    width: 1243px;
+    height: 760.51px;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
 }
 
 .tm-bgcolor{
-/* fundamentals/colors/primary/sensitive-grey */
-position: absolute;
-width: 1243px;
-height: 760.51px;
-top: 0;
-left: 0;
-
-
-background: rgb(248, 248, 252);
+    /* fundamentals/colors/primary/sensitive-grey */
+    position: absolute;
+    width: 1243px;
+    height: 760.51px;
+    top: 0;
+    left: 0;
+    background: rgb(248, 248, 252);
 }
 
 .tm-labels{
@@ -101,14 +86,13 @@ top: 118.17px;
 left: 146.67px;
 color: rgb(125, 125, 137);
 font-family: Open Sans;
-font-size: 12px;
+font-size: 16px;
 font-weight: 400;
 line-height: 21px;
 letter-spacing: 0px;
 text-align: center;
-
-
 }
+
 .tm-tuesday{
 /* Tuesday */
 position: absolute;
@@ -120,9 +104,9 @@ left: 310.13px;
 
 color: rgb(125, 125, 137);
 font-family: Open Sans;
-font-size: 12px;
+font-size: 16px;
 font-weight: 400;
-line-height: 21px;
+line-height: 16px;
 letter-spacing: 0px;
 text-align: center;
 
@@ -135,17 +119,13 @@ width: 80.79px;
 height: 21.9px;
 top: 118.17px;
 left: 463.02px;
-
-
 color: rgb(125, 125, 137);
 font-family: Open Sans;
-font-size: 12px;
+font-size: 16px;
 font-weight: 400;
 line-height: 21px;
 letter-spacing: 0px;
 text-align: center;
-
-
 }
 .tm-thursday{
 /* Thursday */
@@ -154,20 +134,15 @@ width: 64.64px;
 height: 21.9px;
 top: 118.17px;
 left: 635.17px;
-
-
 color: rgb(125, 125, 137);
 font-family: Open Sans;
-font-size: 12px;
+font-size: 16px;
 font-weight: 400;
 line-height: 21px;
 letter-spacing: 0px;
 text-align: center;
-
-
-
-
 }
+
 .tm-friday{
 /* Friday */
 position: absolute;
@@ -179,7 +154,7 @@ left: 816.03px;
 
 color: rgb(125, 125, 137);
 font-family: Open Sans;
-font-size: 12px;
+font-size: 16px;
 font-weight: 400;
 line-height: 21px;
 letter-spacing: 0px;
@@ -199,14 +174,11 @@ left: 964.57px;
 
 color: rgb(125, 125, 137);
 font-family: Open Sans;
-font-size: 12px;
+font-size: 16px;
 font-weight: 400;
 line-height: 21px;
 letter-spacing: 0px;
 text-align: center;
-
-
-
 
 }
 .tm-sunday{
@@ -220,13 +192,14 @@ left: 1134.24px;
 
 color: rgb(125, 125, 137);
 font-family: Open Sans;
-font-size: 12px;
+font-size: 16px;
 font-weight: 400;
 line-height: 21px;
 letter-spacing: 0px;
 text-align: center;
 
 }
+
 .tm-9{
 /* 09:00 */
 position: absolute;
@@ -234,16 +207,6 @@ width: 38.53px;
 height: 21.9px;
 top: 149.46px;
 left: 36.05px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
-
 
 }
 .tm-10{
@@ -253,19 +216,6 @@ width: 31px;
 height: 18.86px;
 top: 206.82px;
 left: 36.05px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
-
-
-
-
 }
 .tm-11{
 /* 10:00 */
@@ -274,15 +224,6 @@ width: 31px;
 height: 18.86px;
 top: 264.19px;
 left: 36.05px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
 
 
 
@@ -296,13 +237,6 @@ top: 321.55px;
 left: 36.05px;
 
 
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
 
 
 }
@@ -315,14 +249,6 @@ top: 378.91px;
 left: 36.05px;
 
 
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
-
 
 }
 .tm-14{
@@ -333,14 +259,6 @@ height: 18.86px;
 top: 436.28px;
 left: 36.05px;
 
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
 
 
 }
@@ -353,14 +271,6 @@ top: 493.64px;
 left: 36.05px;
 
 
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
-
 
 }
 .tm-16{
@@ -371,16 +281,6 @@ height: 18.86px;
 top: 551px;
 left: 36.05px;
 
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
-
-
 }
 .tm-17{
 /* 13:00 */
@@ -389,16 +289,6 @@ width: 31px;
 height: 18.86px;
 top: 608.37px;
 left: 36.05px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
-
 
 
 
@@ -411,18 +301,6 @@ height: 18.86px;
 top: 665.73px;
 left: 36.05px;
 
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
-
-
-
-
 }
 .tm-19{
 /* 14:00 */
@@ -433,15 +311,6 @@ top: 723.1px;
 left: 36.05px;
 
 
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
-
-
 }
 .tm-20{
 /* 14:30 */
@@ -450,15 +319,6 @@ width: 31px;
 height: 18.86px;
 top: 780.46px;
 left: 36.05px;
-
-
-color: rgb(125, 125, 137);
-font-family: Open Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0px;
-text-align: left;
 }
 
 
@@ -467,8 +327,8 @@ text-align: left;
 position: absolute;
 width: 158px;
 height: 155px;
-top:390px;
-left:95px;
+top:170px;
+left:96px;
 background: rgb(255, 255, 255);
 }
 
@@ -480,7 +340,7 @@ width: 5px;
 height: 155px;
 top: 0;
 left: -1px;
-background: rgb(255, 200, 50);
+background: rgb(45, 190, 205);
 }
 
 .lecture1Name{
@@ -517,9 +377,9 @@ text-align: left;
 /* Atoms/Cards/Flat */
 position: absolute;
 width: 160px;
-height: 155px;
-top:680px;
-left:255px;
+height: 100px;
+top:348px;
+left:260px;
 background: rgb(255, 255, 255);
 }
 
@@ -528,10 +388,10 @@ background: rgb(255, 255, 255);
 /* fundamentals/colors/primary/vibrant-cyan */
 position: absolute;
 width: 5px;
-height: 155px;
+height: 100px;
 top: 0;
 left: -1px;
-background: rgb(45, 190, 205);
+background: rgb(255, 200, 50);
 }
 
 .lecture2Name{
@@ -553,7 +413,7 @@ text-align: left;
 position: absolute;
 width: 127.93px;
 height: 59.1px;
-top: 78px;
+top: 58px;
 left: 17.28px;
 color: rgb(27, 27, 37);
 font-family: Open Sans;
@@ -569,8 +429,8 @@ text-align: left;
 position: absolute;
 width: 158px;
 height: 155px;
-top:202px;
-left:780px;
+top:170px;
+left:760px;
 background: rgb(255, 255, 255);
 }
 
@@ -589,7 +449,7 @@ background: rgb(45, 190, 205);
 position: absolute;
 width: 127.93px;
 height: 59.1px;
-top: 18.6px;
+top: 18.6px;    
 left: 17.28px;
 color: rgb(27, 27, 37);
 font-family: Open Sans;
@@ -619,9 +479,9 @@ text-align: left;
 /* Atoms/Cards/Flat */
 position: absolute;
 width: 158px;
-height: 155px;
-top:202px;
-left:590px;
+height: 76px;
+top:348px;
+left:96px;
 background: rgb(255, 255, 255);
 }
 
@@ -630,7 +490,7 @@ background: rgb(255, 255, 255);
 /* fundamentals/colors/primary/vibrant-cyan */
 position: absolute;
 width: 5px;
-height: 155px;
+height: 76px;
 top: 0;
 left: -1px;
 background: rgb(45, 190, 205);
@@ -655,7 +515,7 @@ text-align: left;
 position: absolute;
 width: 127.93px;
 height: 59.1px;
-top: 78px;
+top: 40px;
 left: 17.28px;
 color: rgb(27, 27, 37);
 font-family: Open Sans;
@@ -670,21 +530,20 @@ text-align: left;
 /* Atoms/Cards/Flat */
 position: absolute;
 width: 158px;
-height: 155px;
-top:680px;
-left:590px;
+height: 76px;
+top:435px;
+left:430px;
 background: rgb(255, 255, 255);
 }
-
 
 .lecture5Highlight{
 /* fundamentals/colors/primary/vibrant-cyan */
 position: absolute;
 width: 5px;
-height: 155px;
+height: 76px;
 top: 0;
 left: -1px;
-background: rgb(255, 200, 50);
+background: rgb(45, 190, 205);
 }
 
 .lecture5Name{
@@ -706,7 +565,7 @@ text-align: left;
 position: absolute;
 width: 127.93px;
 height: 59.1px;
-top: 78px;
+top: 40px;
 left: 17.28px;
 color: rgb(27, 27, 37);
 font-family: Open Sans;
@@ -721,9 +580,9 @@ text-align: left;
 /* Atoms/Cards/Flat */
 position: absolute;
 width: 158px;
-height: 155px;
+height: 100px;
 top:540px;
-left:780px;
+left:595px;
 background: rgb(255, 255, 255);
 }
 
@@ -732,7 +591,7 @@ background: rgb(255, 255, 255);
 /* fundamentals/colors/primary/vibrant-cyan */
 position: absolute;
 width: 5px;
-height: 155px;
+height: 100px;
 top: 0;
 left: -1px;
 background: rgb(255, 200, 50);
@@ -757,6 +616,57 @@ text-align: left;
 position: absolute;
 width: 127.93px;
 height: 59.1px;
+top: 58px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture7Card{
+/* Atoms/Cards/Flat */
+position: absolute;
+width: 158px;
+height: 155px;
+top:170px;
+left:595px;
+background: rgb(255, 255, 255);
+}
+
+
+.lecture7Highlight{
+/* fundamentals/colors/primary/vibrant-cyan */
+position: absolute;
+width: 5px;
+height: 155px;
+top: 0;
+left: -1px;
+background: rgb(45, 190, 205);
+}
+
+.lecture7Name{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 18.6px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture7Location{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
 top: 78px;
 left: 17.28px;
 color: rgb(27, 27, 37);
@@ -766,4 +676,75 @@ font-weight: 400;
 line-height: 21px;
 letter-spacing: 0px;
 text-align: left;
+}
+
+.lecture8Card{
+/* Atoms/Cards/Flat */
+position: absolute;
+width: 158px;
+height: 100px;
+top:640px;
+left:430px;
+background: rgb(255, 255, 255);
+}
+
+
+.lecture8Highlight{
+/* fundamentals/colors/primary/vibrant-cyan */
+position: absolute;
+width: 5px;
+height: 100px;
+top: 0;
+left: -1px;
+background: rgb(255, 200, 50);
+}
+
+.lecture8Name{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 18.6px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.lecture8Location{
+position: absolute;
+width: 127.93px;
+height: 59.1px;
+top: 58px;
+left: 17.28px;
+color: rgb(27, 27, 37);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+
+
+.realFrame{
+    position: absolute;
+    top: -100px;
+    left: -5px;
+}
+
+.times{
+    position: absolute;
+    top:12px;
+    color: rgb(125, 125, 137);
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
 }
