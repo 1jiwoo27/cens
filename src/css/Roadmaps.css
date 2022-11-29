@@ -49,7 +49,7 @@
     position: absolute;
     width: 188px;
     height: 182px;
-    top: 690px;
+    top: 682px;
     left: 570px;
     border: none;
     background: rgb(142, 151, 117);
@@ -69,7 +69,7 @@
     position: absolute;
     width: 188px;
     height: 182px;
-    top: 690px;
+    top: 682px;
     left: 1140px;
     border: none;
     background: rgb(142, 151, 117);
@@ -87,6 +87,7 @@
 
 .rm-center-tri {
     position: relative;
+    left:-15px;
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -111,5 +112,5 @@
     line-height: 36px;
     text-align: center;
     top: 50%;
-    margin-left: 815px;
+    margin-left: 824px;
 }
