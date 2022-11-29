@@ -1,7 +1,9 @@
 const express = require('express'); // 프레임 워크 받아오기 
 const app = express(); // 모듈 사용 
 const bodyParser = require('body-parser')
-const port = 4000; // 포트 넘버 설정 
+const port = 4000; // 포트 넘버 설정
+const spawn = require('child_process').spawn;
+const iconv = require('iconv-lite');
 
 app.listen(port, () => {
   console.log('listening on '+port);
@@ -17,8 +19,6 @@ app.get("/", (req, res) => {
 }); //get 방식으로 '/' 경로 사용할 경우 send와 log 표출
 
 app.post('/api',(req,res)=>{
-<<<<<<< HEAD
-  let data
   let jsonToSend = {};
   userdata = req.body.data;
   const result = spawn('python', ['knapsack.py', userdata[3],userdata[4],userdata[1],userdata[2]]);
@@ -40,7 +40,7 @@ app.post('/api',(req,res)=>{
     jsonToSend["success"] = false;
     jsonToSend["err_code"] = -1;
     jsonToSend["err_msg"] = "불러오기에 실패했습니다. 다시 시도해주세요!";
-    jsonToSend["err_content"] = dataToSend.toString("euc-kr");
+    jsonToSend["err_content"] = dataToSend.toString("utf8");
     
     //디버깅 전에 각 result.stderr, stdout 함수들마다 res.json 응답을 생성했었는데,
     //ERR_HTTP_HEADERS_SENT 에러가 발생해서 응답은 result.on에서 한번 보내는 것으로 디버깅했다.
@@ -56,10 +56,5 @@ app.post('/api',(req,res)=>{
       return;
     });
   console.log(jsonToSend)
-=======
-  jb = req.body.data;
-  res.send("받았습니다~");
->>>>>>> parent of 41d5584 (일단 띄우긴 했는데요.)
   console.log('잘 왔나요? ' );
-  console.log(jb);
 }); // post 방식으로 /api/jeongbo 경로 사용할 경우
