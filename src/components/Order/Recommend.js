@@ -2,6 +2,7 @@ import React, { useState }  from 'react'
 import '../../css/Recommend.css'
 import Pagination from '../Pagination';
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 
 export default function Recommend() {
 
@@ -10,13 +11,16 @@ export default function Recommend() {
   const credit = location.state.credit;
   const teach = location.state.teach;
   const pro = location.state.pro;
-  const test = location.state.test;
+
+  const navigate = useNavigate();
+  const ToTest = () => {
+    navigate("/test", { state: { name: name, credit: credit, teach: teach}});
+  };
 
   console.log(name)
   console.log(credit)
   console.log(teach)
-
-
+  
   const recoList = {
     subjects: [
       {
@@ -93,7 +97,11 @@ export default function Recommend() {
           <p className="reco-professor">- {el.professor} 교수님</p>
           <p className="reco-score">- 에타 강의평: {el.score}</p>
           </div>
-        </div>
+         <div button className='info-save-bt' type='submit' onClick={ToTest}>
+         저장
+         </div>
+     </div>
+        
         }
         </>
       )

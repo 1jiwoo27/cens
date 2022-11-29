@@ -9,7 +9,7 @@ const cors = require("cors");
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Chris!");
+  res.send("Backend Minseo~!");
   console.log("My name is...");
 });
 
