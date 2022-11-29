@@ -1,6 +1,5 @@
 import copy
 import pandas as pd
-import sys
 
 def restruct(D, userInfo): # 강의 value 사용자에 맞게 수정
     new = [[] for d in D]
@@ -36,75 +35,72 @@ def knapSack(data, W):
     return res[W]
 
 
-def start(num1,num2,num3,num4):
-    # Driver Code
-    d = pd.read_csv('comeduLectures_22_2.csv', encoding='cp949')
-    D = pd.DataFrame(d).to_numpy()
 
-    coding = num1 #코딩
-    prefer = num2 #선호
-    info = [coding,prefer]
-    data = restruct(D, info)   #선호도에 따라 강의 평점 재구성
-    """ 강의 목록 프린트
-    for i in data:
-        print(i) """
+# Driver Code
+d = pd.read_csv('CEPO/comeduLectures_22_2.csv', encoding='cp949')
+D = pd.DataFrame(d).to_numpy()
 
-    credit = num3 #학점
-    edu_credit = num4 * 2 #교직
-    com_credit = credit - edu_credit
+coding = int(input("코딩 실력 (하수1~5고수) : "))
+prefer = int(input("선호 유형 (과제1~5시험) : "))
+info = [coding,prefer]
+data = restruct(D, info)   #선호도에 따라 강의 평점 재구성
+""" 강의 목록 프린트
+for i in data:
+    print(i) """
 
-    # knapsack - 반복문으로 시간 및 강의명 중복 확인
-    while True:
-        eduData = []
-        comData = []
-        
-        for d in data:
-            if d[0] == '교직':
-                eduData.append(d)
-            else:
-                comData.append(d)
+credit = int(input("목표 학점 : "))
+edu_credit = int(input("원하는 교직 과목 수 : ")) * 2
+com_credit = credit - edu_credit
 
-        edu_result = knapSack(eduData, edu_credit)
-        com_result = knapSack(comData, com_credit)
-        
-        result = com_result + edu_result
-        result.sort(reverse=True, key=lambda x:x[6])
-        
-        tmp = []
-        
-        for i in range(len(result)):
-            for j in range(i+1, len(result)):
-                #강의명 중복 확인
-                if result[i][2] == result[j][2]:
-                    tmp.append(result[j])
-                    continue
-                #시간 중복 확인
-                if result[i][4][0] == result[j][4][0] and (result[i][4][1]<=result[j][4][1]<=result[i][4][2] or result[i][4][1]<=result[j][4][2]<=result[i][4][2]):
-                    tmp.append(result[j])
-                    continue
-                if len(result[i][4])>3:
-                    if result[i][4][3] == result[j][4][0] and (result[i][4][4]<=result[j][4][1]<=result[i][4][5] or result[i][4][4]<=result[j][4][2]<=result[i][4][5]):
-                        tmp.append(result[j])
-                        continue
-                    if len(result[j][4])>3:
-                        if result[i][4][3] == result[j][4][3] and (result[i][4][4]<=result[j][4][4]<=result[i][4][5] or result[i][4][4]<=result[j][4][5]<=result[i][4][5]):
-                            tmp.append(result[j])
-                            continue
-                elif len(result[j][4])>3:
-                    if result[i][4][0] == result[j][4][3] and (result[i][4][1]<=result[j][4][4]<=result[i][4][2] or result[i][4][1]<=result[j][4][5]<=result[i][4][2]):
-                        tmp.append(result[j])
-                        continue
-        
-        if len(tmp) == 0:
-            break
+# knapsack - 반복문으로 시간 및 강의명 중복 확인
+while True:
+    eduData = []
+    comData = []
+    
+    for d in data:
+        if d[0] == '교직':
+            eduData.append(d)
         else:
-            for t in tmp:
-                if t in data:
-                    data.remove(t)
-            continue
+            comData.append(d)
 
-    for r in result:
-        print(r)
-        
-if __name__ == '__main__':
-    start(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
+    edu_result = knapSack(eduData, edu_credit)
+    com_result = knapSack(comData, com_credit)
+    
+    result = com_result + edu_result
+    result.sort(reverse=True, key=lambda x:x[6])
+    
+    tmp = []
+    
+    for i in range(len(result)):
+        for j in range(i+1, len(result)):
+            #강의명 중복 확인
+            if result[i][2] == result[j][2]:
+                tmp.append(result[j])
+                continue
+            #시간 중복 확인
+            if result[i][4][0] == result[j][4][0] and (result[i][4][1]<=result[j][4][1]<=result[i][4][2] or result[i][4][1]<=result[j][4][2]<=result[i][4][2]):
+                tmp.append(result[j])
+                continue
+            if len(result[i][4])>3:
+                if result[i][4][3] == result[j][4][0] and (result[i][4][4]<=result[j][4][1]<=result[i][4][5] or result[i][4][4]<=result[j][4][2]<=result[i][4][5]):
+                    tmp.append(result[j])
+                    continue
+                if len(result[j][4])>3:
+                    if result[i][4][3] == result[j][4][3] and (result[i][4][4]<=result[j][4][4]<=result[i][4][5] or result[i][4][4]<=result[j][4][5]<=result[i][4][5]):
+                        tmp.append(result[j])
+                        continue
+            elif len(result[j][4])>3:
+                if result[i][4][0] == result[j][4][3] and (result[i][4][1]<=result[j][4][4]<=result[i][4][2] or result[i][4][1]<=result[j][4][5]<=result[i][4][2]):
+                    tmp.append(result[j])
+                    continue
+    
+    if len(tmp) == 0:
+        break
+    else:
+        for t in tmp:
+            if t in data:
+                data.remove(t)
+        continue
+
+for r in result:
+    print(r)
