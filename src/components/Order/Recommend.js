@@ -11,15 +11,17 @@ export default function Recommend() {
   const credit = location.state.credit;
   const teach = location.state.teach;
   const pro = location.state.pro;
-
+  const test = location.state.test;
   const navigate = useNavigate();
   const ToTest = () => {
-    navigate("/test", { state: { name: name, credit: credit, teach: teach}});
+    navigate("/test", { state: { name: name, credit: credit, teach: teach,pro: pro, test: test}});
   };
 
   console.log(name)
   console.log(credit)
   console.log(teach)
+  console.log(pro)
+  console.log(test)
   
   const recoList = {
     subjects: [

@@ -9,11 +9,11 @@ export default function Info() {
     navigate("/recommend", { state: { name: name, credit: credit, teach: teach, pro: pro, test: test}});
   };
 
-  const [name, setName] = useState("");
-  const [credit, setCredit] = useState("");
-  const [teach, setTeach] = useState("");
-  const [pro, setPro] = useState("");
-  const [test, setTest] = useState("");
+  const [name, setName] = useState(""); // 이름 
+  const [credit, setCredit] = useState(""); // 학점 
+  const [teach, setTeach] = useState(""); // 교직
+  const [pro, setPro] = useState(""); // 코딩실력 
+  const [test, setTest] = useState(""); // 시험 선호도 
 
   return (
     <div>

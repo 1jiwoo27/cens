@@ -17,8 +17,6 @@ app.get("/", (req, res) => {
 }); //get 방식으로 '/' 경로 사용할 경우 send와 log 표출
 
 app.post('/api',(req,res)=>{
-  let jb= "test";
-  console.log(jb);
   jb = req.body.data;
   res.send("받았습니다~");
   console.log('잘 왔나요? ' );
