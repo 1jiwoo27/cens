@@ -7,7 +7,8 @@ export default function Roadmaps() {
   
   const navigate = useNavigate();
   const navigateToRoadmap1 = () => {
-    navigate("/roadmaps/roadmap1");
+    navigate("/common.html");
+    window.location.reload();
   };
   const navigateToRoadmap2 = () => {
     navigate(`/profession.html`);
