@@ -112,7 +112,8 @@ export default function Recommend() {
         limit={limit}
         page={page}
         setPage={setPage}
-      />  
+      />
+    
     </>
   );
 }
