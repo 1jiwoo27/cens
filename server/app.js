@@ -28,8 +28,9 @@ app.post('/api',(req,res)=>{
   const result = spawn('python', ['knapsack.py', userdata[3],userdata[4],userdata[1],userdata[2]]);
 
   result.stdout.on('data', (dataToSend) => {
-      data = iconv.decode(dataToSend,'UTF-8');
-      console.log(dataToSend.toString("UTF-8"));
+      const data = iconv.decode(dataToSend,'euc-kr');
+      console.log(data);
+      //console.log(dataToSend.toString("utf8"));
       console.log("stdout");
       data += dataToSend;
       jsonToSend["success"]= true;
@@ -43,7 +44,7 @@ app.post('/api',(req,res)=>{
     jsonToSend["success"] = false;
     jsonToSend["err_code"] = -1;
     jsonToSend["err_msg"] = "불러오기에 실패했습니다. 다시 시도해주세요!";
-    jsonToSend["err_content"] = dataToSend.toString("UTF-8");
+    jsonToSend["err_content"] = dataToSend.toString("euc-kr");
     
     //디버깅 전에 각 result.stderr, stdout 함수들마다 res.json 응답을 생성했었는데,
     //ERR_HTTP_HEADERS_SENT 에러가 발생해서 응답은 result.on에서 한번 보내는 것으로 디버깅했다.

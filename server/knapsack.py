@@ -3,8 +3,8 @@ import pandas as pd
 import sys
 import io
 
-sys.stdout = io.TextIOWrapper(sys.stdout.detach(),encoding = 'utf-8')
-sys.stderr = io.TextIOWrapper(sys.stderr.detach(),encoding = 'utf-8')
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(),encoding = 'utf8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(),encoding = 'utf8')
 def restruct(D, userInfo): # 강의 value 사용자에 맞게 수정
     new = [[] for d in D]
     
@@ -41,7 +41,7 @@ def knapSack(data, W):
 
 def start(num1,num2,num3,num4):
     # Driver Code
-    d = pd.read_csv('comeduLectures_22_2.csv', encoding='utf-8')
+    d = pd.read_csv('comeduLectures_22_2.csv', encoding='utf8')
     D = pd.DataFrame(d).to_numpy()
 
     coding = num1 #코딩

@@ -29,13 +29,11 @@ export default function Test() {
   client.post('http://localhost:4000/api' , {data} )
   .then(function(response){
 	  let final = [];
-    console.log("데이터 확인만 %j");
-    console.log(response.data);
+    console.log("데이터 확인만 %j",response.data);
+    //data2 = setData2(response.data);
     alert(JSON.stringify(response.data) );
     })
-    .catch(function(error){
-       console.log("실패");
-    });
+  .then((data2)=> setData2(data2));
   }
   return (
     <>
