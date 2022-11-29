@@ -1,7 +1,10 @@
 import copy
 import pandas as pd
 import sys
+import io
 
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(),encoding = 'utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(),encoding = 'utf-8')
 def restruct(D, userInfo): # 강의 value 사용자에 맞게 수정
     new = [[] for d in D]
     
@@ -38,16 +41,13 @@ def knapSack(data, W):
 
 def start(num1,num2,num3,num4):
     # Driver Code
-    d = pd.read_csv('comeduLectures_22_2.csv', encoding='cp949')
+    d = pd.read_csv('comeduLectures_22_2.csv', encoding='utf-8')
     D = pd.DataFrame(d).to_numpy()
 
     coding = num1 #코딩
     prefer = num2 #선호
     info = [coding,prefer]
     data = restruct(D, info)   #선호도에 따라 강의 평점 재구성
-    """ 강의 목록 프린트
-    for i in data:
-        print(i) """
 
     credit = num3 #학점
     edu_credit = num4 * 2 #교직
@@ -103,8 +103,7 @@ def start(num1,num2,num3,num4):
                     data.remove(t)
             continue
 
-    for r in result:
-        print(r)
+    print(result,end='')
         
 if __name__ == '__main__':
-    start(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
+    start(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]),int(sys.argv[4]))

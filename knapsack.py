@@ -103,8 +103,8 @@ def start(num1,num2,num3,num4):
                     data.remove(t)
             continue
 
-    for r in result:
-        print(r)
+
+    print(result,end='')
         
 if __name__ == '__main__':
-    start(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
+    start(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]),int(sys.argv[4]))
