@@ -5,7 +5,7 @@
 
 .home-title{
     margin-left: 100px;
-    margin-top: 280px;
+    margin-top: 250px;
     width: 933px;
     height: 248px;
     color: rgb(20, 24, 62);
@@ -29,15 +29,17 @@
 
 .animated{
     display: inline;
-    margin-top: 190px;
+    margin-top: 170px;
     margin-left: 100px;
 }
 
 .copy-right{
+    position: absolute;
+    top: 920px;
     color: rgb(109, 109, 109);
     font-size: 26px;
     font-weight: 500;
     line-height: 31px;
     text-align: left;
-    margin-left: 1400px;
+    margin-left: 1430px;
 }

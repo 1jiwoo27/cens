@@ -1,8 +1,20 @@
 import React from 'react'
 import '../css/Timetable.css'
-
+import { useNavigate } from "react-router-dom"
+import { useState } from 'react';
 
 export default function Timetable() {
+  const navigate = useNavigate();
+  const ToReco = () => {
+    navigate("/recommend",{ state: { name: name, credit: credit, teach: teach, pro: pro, test: test}});
+  };
+  const [name, setName] = useState(""); // 이름 
+  const [credit, setCredit] = useState(""); // 학점 
+  const [teach, setTeach] = useState(""); // 교직
+  const [pro, setPro] = useState(""); // 코딩실력 
+  const [test, setTest] = useState(""); // 시험 선호도 
+
+
   return (
     <div className='tm-screen'>
       <div className='tm-title'>Time Table</div>
@@ -81,6 +93,9 @@ export default function Timetable() {
             <div className='lecture8Location'>권승희 31506</div>
           </div>
         </div>
+      </div>
+      <div button className='timetable-bt-tm' type='submit' onClick={ToReco}>
+        <div className='txt-tm'>강의 목록 보러 가기</div>
       </div>
     </div>
   )

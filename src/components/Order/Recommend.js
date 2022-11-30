@@ -14,7 +14,7 @@ export default function Recommend() {
   const test = location.state.test;
   const navigate = useNavigate();
   const ToTest = () => {
-    navigate("/test", { state: { name: name, credit: credit, teach: teach,pro: pro, test: test}});
+    navigate("/timetable");
   };
 
   console.log(name)
@@ -99,9 +99,6 @@ export default function Recommend() {
           <p className="reco-professor">- {el.professor} 교수님</p>
           <p className="reco-score">- 에타 강의평: {el.score}</p>
           </div>
-         <div button className='info-save-bt' type='submit' onClick={ToTest}>
-         저장
-         </div>
      </div>
         
         }
@@ -109,13 +106,17 @@ export default function Recommend() {
       )
     })}
     </div>
-    <Pagination
-        total={recoList.subjects.length}
-        limit={limit}
-        page={page}
-        setPage={setPage}
-      />
-    
+    <div>
+      <Pagination
+          total={recoList.subjects.length}
+          limit={limit}
+          page={page}
+          setPage={setPage}
+        />
+      <div button className='timetable-bt' type='submit' onClick={ToTest}>
+          <div className='txt'>시간표 보러 가기</div>
+      </div>
+    </div>
     </>
   );
 }

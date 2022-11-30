@@ -738,3 +738,25 @@ text-align: left;
     letter-spacing: 0px;
     text-align: left;
 }
+
+.timetable-bt-tm{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    top: 540px;
+    left: 144px;
+    background: rgb(178, 178, 178);
+    border: none;
+    border-radius: 15px;
+    color: rgb(20, 24, 62);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 42px;
+    cursor: pointer;
+}
+
+.txt-tm{
+    padding: 8px 0
+}
