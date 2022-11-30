@@ -3,8 +3,10 @@ import '../../css/Recommend.css'
 import Pagination from '../Pagination';
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
+import axios from 'axios';   //axios 추가
 
 export default function Recommend() {
+
 
   const location = useLocation();
   const name = location.state.name;
@@ -17,12 +19,29 @@ export default function Recommend() {
     navigate("/test", { state: { name: name, credit: credit, teach: teach,pro: pro, test: test}});
   };
 
-  console.log(name)
-  console.log(credit)
-  console.log(teach)
-  console.log(pro)
-  console.log(test)
   
+  const data =  [name, credit, teach,  pro, test];
+  const [data1, setData1] = useState(name+"님의 추천 과목 목록");
+  console.log(data) // 유저 정보
+
+  const client = axios.create();   // axios 기능생성   
+  client.post('http://localhost:4000/api' , {data} )
+  .then(function(response){
+    console.log(response.data);
+    // data2 => setData2(response.data); 
+    alert(JSON.stringify(response.data) );
+    // console.log(convertWebToString(response.data));
+  })   
+  const send =()=>{
+    const client = axios.create();   // axios 기능생성   
+    client.post('http://localhost:4000/api' , {data} )
+    .then(function(response){
+      console.log(response.data);
+      // data2 => setData2(response.data); 
+      alert(JSON.stringify(response.data) );
+      // console.log(convertWebToString(response.data));
+    })      
+  }
   const recoList = {
     subjects: [
       {
@@ -84,7 +103,7 @@ export default function Recommend() {
   return (
     <>
       <div className='reco-title'>
-        수강 순서 추천
+        {data1}
       </div>
       <div className='reco-middle'>
       {recoList.subjects.slice(offset, offset + limit).map((el, index) => {
@@ -99,9 +118,7 @@ export default function Recommend() {
           <p className="reco-professor">- {el.professor} 교수님</p>
           <p className="reco-score">- 에타 강의평: {el.score}</p>
           </div>
-         <div button className='info-save-bt' type='submit' onClick={ToTest}>
-         저장
-         </div>
+         
      </div>
         
         }

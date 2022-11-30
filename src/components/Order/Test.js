@@ -2,6 +2,7 @@
 import React, {useEffect, useState} from "react";
 import { useLocation } from "react-router-dom";
 import axios from 'axios';   //axios 추가
+//import { response } from "express";
 
 export default function Test() {
   const location = useLocation();
@@ -20,9 +21,18 @@ export default function Test() {
   
   const data =  [name, credit, teach,  pro, test];
   const [data1, setData1] = useState("노드에서 받을 정보");
-  const [data2, setData2] = useState("리액트 -> 노드 성공했는지");
+  const [data2, setData2] = useState(null);
 
-
+  function convertWebToString(data) {
+    //가져온 데이터가 Object 형태인데, 왜인지 모르겠지만 eval로 다시 초기화 하지 않으면 버퍼로 데이터를 가지고 있음
+    let myJsonString = (data.toString());
+    myJsonString = eval(myJsonString);
+    // console.log(myJsonString)
+    return data
+    // //eval로 초기화 시 array형태의 데이터 얻을 수 있음.
+    // console.log(myJsonString)
+    // 
+}
   console.log(data) // 유저 정보
 
   function clicked() {
@@ -32,13 +42,18 @@ export default function Test() {
   };
   
   const send =()=>{
-    const client = axios.create();   // axios 기능생성   
+  const client = axios.create();   // axios 기능생성   
   client.post('http://localhost:4000/api' , {data} )
-  .then((res)=> console.log(res.data))
-  .then((data2) => setData2(data2));   //axios 기능을 통한 post 사용및 name 값 전달.
-  console.log(data2)
-  //.then((res) =>res.text())
-  //.then((data2) => setData(data2)); // 내가 노드로 준 정보를 잘 받았다는 의미
+  .then(function(response){
+	  console.log(response.data);
+    // data2 => setData2(response.data); 
+    alert(JSON.stringify(response.data) );
+    // console.log(convertWebToString(response.data));
+  })
+  .then((res) => res.JSON())
+  .then((data1) => setData1(data1)); // 노드에서 받은 정보  
+  
+      
 }
 
   return (
@@ -48,6 +63,7 @@ export default function Test() {
       <button onClick={clicked}>노드에서 리액트 정보 체크</button>
       <button onClick={()=>{send();}}>리액트에서 노드 정보 체크</button>
       <h2>{data2}</h2>
-     </>
+      
+      </>
   );
 }

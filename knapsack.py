@@ -39,7 +39,7 @@ def knapSack(data, W):
 
 def start(num1,num2,num3,num4):
     # Driver Code
-    d = pd.read_csv('complete.csv', encoding='cp949')
+    d = pd.read_csv('comeduLectures_22_2.csv', encoding='utf8')
     D = pd.DataFrame(d).to_numpy()
 
     coding = num1 #코딩
@@ -101,9 +101,8 @@ def start(num1,num2,num3,num4):
                     data.remove(t)
             continue
 
-    for r in result:
-        print(r)
+    print(result,end='')
         
 if __name__ == '__main__':
-    #start(3,3,20,3)
-    start(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]),int(sys.argv[4]))
+    start(3,3,20,2)
+    #start(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]),int(sys.argv[4]))

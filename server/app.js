@@ -28,8 +28,9 @@ app.post('/api',(req,res)=>{
   const result = spawn('python', ['knapsack.py', userdata[3],userdata[4],userdata[1],userdata[2]]);
 
   result.stdout.on('data', (dataToSend) => {
-      data = iconv.decode(dataToSend,'UTF-8');
-      console.log(dataToSend.toString("UTF-8"));
+      data = iconv.decode(dataToSend,'euc-kr');
+      console.log(data);
+      //console.log(dataToSend.toString("cp949"));
       console.log("stdout");
       data += dataToSend;
       jsonToSend["success"]= true;
