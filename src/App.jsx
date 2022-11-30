@@ -9,7 +9,7 @@ import Recommend from './components/Order/Recommend'
 import Roadmaps from './components/Roadmap/Roadmaps'
 import Services from './components/Service/Services'
 import Timetable from './components/Timetable'
-import Test from './components/Order/Test'
+//import Test from './components/Order/Test'
 import React from "react";
 //css
 import "./App.css";
@@ -31,7 +31,6 @@ function App() {
           <Route path="/teacher.html"></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/timetable" element={<Timetable />}></Route>
-          <Route path="/test" element={<Test />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
